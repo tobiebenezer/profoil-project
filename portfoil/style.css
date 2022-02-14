@@ -1,0 +1,315 @@
+/*Global Styles*/
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "vibes";
+  src: url("./GreatVibes-Regular.ttf");
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("./Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "shuan";
+  src: url("./Kaushan_Script/KaushanScript-Regular.ttf");
+}
+@font-face {
+  font-family: "Frank";
+  src: url("./LibreFranklin-VariableFont_wght.ttf");
+}
+
+html {
+  font-family: "oswald";
+  font-size: 62.5%;
+  background: gray;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400; /*set boldness*/
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+button {
+  padding: 1rem 6rem;
+  border: none;
+  background: #4c6e97;
+  color: white;
+  border-radius: 2.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  transition: background 1s ease-in;
+  -webkit-transition: background 1s ease-in;
+  -moz-transition: background 1s ease-in;
+  -ms-transition: background 1s ease-in;
+  -o-transition: background 1s ease-in;
+}
+
+button:hover {
+  background: rgb(173, 86, 253);
+  font-size: 2.6rem;
+  transition: background 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+}
+
+/* navigation Bar */
+header {
+  position: sticky;
+  top: 0%;
+  width: 97%;
+  margin: auto;
+  background: white;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  position: sticky;
+  top: 0%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* box-shadow: 0px 5px 5px rgb(100, 99, 99); */
+  padding: 0.9rem;
+}
+
+nav #logo {
+  flex: 1 2 40rem;
+  font-family: vibes;
+}
+
+nav ul {
+  flex: 1 2 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* main body */
+main {
+  background: white;
+  width: 97%;
+  margin: auto;
+}
+
+.hero {
+  max-height: 50%;
+  padding: 2rem;
+  background: rgb(147, 171, 179);
+  width: 95%;
+  margin: auto;
+  display: flex;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.introduction {
+  padding: 0 1.5rem;
+  max-height: 40vh;
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-image {
+  flex: 1 1 40rem;
+}
+.introduction p {
+  padding: 1rem;
+}
+.introduction h3 {
+  color: blue;
+}
+.introduction span {
+  font-weight: 400;
+}
+.mypic {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.testimony {
+  width: 95%;
+  margin: auto;
+  padding: 5rem 5rem;
+  font-family: shuan;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url(./images/pexels-ola-dapo-3345882-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testimony div {
+  text-align: justify;
+  padding: 2.5rem 2.5rem;
+  color: rgb(5, 17, 49);
+  /* text-shadow: 0.2px 0.2px 0.5px bla/ck; */
+  background-color: #4c6e97c6;
+  border-top-left-radius: 4.5rem;
+  border-bottom-right-radius: 4.5rem;
+}
+.testimony h1 {
+  text-align: center;
+}
+
+.testimony span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Skills section */
+.tech-skill {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+
+.tech {
+  flex: 1 1 25rem;
+  min-height: 35vh;
+  margin: 2rem 1.5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.skill-image {
+  background: #4c6e97c6;
+  padding-top: 0.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.skill-image img {
+  height: 5.5rem;
+  max-width: 50%;
+  margin: 0.3rem;
+}
+
+/* About section */
+.about-me {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-me div:nth-child(1) {
+  flex: 1 1 40rem;
+}
+
+.about-me div:nth-child(2) {
+  flex: 1 1 40rem;
+  text-align: justify;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-me h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.about-me button:hover {
+  background: rgb(236, 148, 162);
+}
+
+.about-me table {
+  font-size: 2.5rem;
+  padding: 4rem 1rem;
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  min-height: 2vh;
+  width: 100%;
+  margin: auto;
+  padding: 0.7rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  height: 2rem;
+  width: 2rem;
+}
+
+footer li {
+  flex: 1 1 40rem;
+}
+
+/* queries */
+@media screen and (max-width: 682px) {
+  .about-me table {
+    font-size: 1.5rem;
+    padding: 4rem 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .about-me table {
+    font-size: 1rem;
+    padding: 4rem 1rem;
+    width: 100%;
+  }
+}
